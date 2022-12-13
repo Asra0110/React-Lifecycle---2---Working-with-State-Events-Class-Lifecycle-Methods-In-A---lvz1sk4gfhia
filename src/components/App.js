@@ -15,10 +15,13 @@ class App extends React.Component {
 
   }
 
-
+  componentDidMount() {
+    console.log("mounted");
+  }
   
   render() {
     console.log('rendered')
+
     return (
       <div id="main">
           <div id="count">{this.state.count}</div>
@@ -29,4 +32,4 @@ class App extends React.Component {
 }
 
 
-export default App;
+export default App;
